@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f9edf0" />
+  <meta name="description" content="You're invited to Rania's bridal shower." />
+  <title>Rania's Bridal Shower | You're Invited</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Italianno&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="petal petal-one" aria-hidden="true">✿</div><div class="petal petal-two" aria-hidden="true">✿</div>
+  <main class="shell">
+    <div class="topline">A CELEBRATION OF LOVE</div>
+    <section class="invite" aria-labelledby="main-title">
+      <div class="flower flower-left" aria-hidden="true">❀<span>✿</span></div>
+      <div class="flower flower-right" aria-hidden="true">✿<span>❀</span></div>
+      <div class="ornament">✦ &nbsp; ❀ &nbsp; ✦</div>
+      <p class="eyebrow">PLEASE JOIN US FOR</p>
+      <h1 id="main-title"><span class="bride-name">Rania’s</span><em>Bridal Shower</em></h1>
+      <p class="subtitle">A little love, a little laughter, and a whole lot of flowers.</p>
+      <div class="rule"><span>❀</span></div>
+      <p class="section-title">THE CELEBRATION</p>
+      <div class="details">
+        <div><span class="detail-icon">◷</span><strong id="date-text">Date to be announced</strong><small id="time-text">Time to be announced</small></div>
+        <div><span class="detail-icon">⌖</span><strong id="venue-text">Venue to be announced</strong><small id="address-text">Details coming soon</small></div>
+      </div>
+      <div class="theme-pill">✿ &nbsp; Theme: Floral &amp; Elegantly Pink &nbsp; ✿</div>
+      <p class="note">Dress in your prettiest pinks and florals, and come celebrate our beautiful bride-to-be.</p>
+      <div class="rsvp-divider">♡ &nbsp; KINDLY REPLY &nbsp; ♡</div>
+      <h2>Will you join us?</h2>
+      <p class="deadline" id="deadline-text">RSVP deadline to be announced</p>
+      <form id="rsvp-form" method="POST" target="rsvp-target" autocomplete="on">
+        <label for="guest-name">Your name <span aria-hidden="true">*</span></label>
+        <input id="guest-name" name="guestName" type="text" maxlength="100" placeholder="Your full name" autocomplete="name" required />
+        <fieldset>
+          <legend>Will you be attending? <span aria-hidden="true">*</span></legend>
+          <div class="choices"><label class="choice"><input type="radio" name="attending" value="Yes" required /><span>♡ &nbsp; Joyfully accepts</span></label><label class="choice"><input type="radio" name="attending" value="No" /><span>✉ &nbsp; Regretfully declines</span></label></div>
+        </fieldset>
+        <label for="allergies">Any allergies we need to know about?</label>
+        <textarea id="allergies" name="allergies" rows="3" maxlength="500" placeholder="Let us know, or write 'None'"></textarea>
+        <div class="hidden-trap" aria-hidden="true"><label for="website">Leave this blank</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
+        <p class="privacy">Your response will only be shared with the event organiser to plan the celebration. Please only share allergy information you're comfortable providing.</p>
+        <button type="submit" id="submit-btn">Send my RSVP <span aria-hidden="true">♡</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <iframe name="rsvp-target" id="rsvp-target" title="RSVP submission response" hidden></iframe>
+      <div class="closing">With love &amp; blooming wishes,</div>
+      <div class="signature">For Rania ♡</div>
+    </section>
+    <footer>MADE WITH LOVE &nbsp; ❀ &nbsp; FOR A BEAUTIFUL BEGINNING</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
